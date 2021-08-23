@@ -58,3 +58,104 @@
         }
     }
 }
+
+@media (max-width: 991px) {
+    .promo {
+        background-position: 25% center;
+        min-height: 600px;
+        padding: 23px 0 73px;
+        &__wrapper {
+            margin-top: 81px;
+        }
+        &__header {
+            font-size: 39px;
+        }
+        &__subheader {
+            margin-top: 17px;
+            font-size: 22px;
+        }
+        &__icons {
+            margin-top: 49px;
+            width: 400px;
+        }
+        &__icon {
+            width: 100px;
+            font-size: 13px;
+            img {
+                margin-bottom: 15px;
+            }
+        }
+        &__link {
+            margin-top: 16px;
+            font-size: 15px;
+        }
+    }    
+}
+
+@media (max-width: 767px) {
+    .promo {
+        min-height: 550px;        
+        padding: 20px 0 63px;
+        &__wrapper {
+            margin-top: 76px;
+        }
+        &__header {
+            font-size: 35px;
+        }
+        &__subheader {
+            margin-top: 16px;
+            font-size: 20px;
+        }
+        &__icons {
+            margin-top: 45px;
+            width: 350px;
+        }
+        &__icon {
+            width: 90px;
+            font-size: 12px;
+            img {
+                margin-bottom: 13px;
+            }
+        }
+        &__link {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+    } 
+
+}
+
+@media (max-width: 575px) {
+    .promo {
+        background-position: 25% center;
+        min-height: 600px;
+        padding: 18px 0 53px;
+        &__wrapper {
+            margin-top: 71px;
+        }
+        &__header {
+            font-size: 32px;
+            line-height: normal;
+        }
+        &__subheader {
+            margin-top: 12px;
+            font-size: 16px;
+            line-height: normal;
+        }
+        &__icons {
+            margin-top: 39px;
+            width: 300px;
+        }
+        &__icon {
+            width: 80px;
+            font-size: 11px;
+            img {
+                margin-bottom: 13px;
+            }
+        }
+        &__link {
+            margin-top: 14px;
+            font-size: 12px;
+        }
+    } 
+}

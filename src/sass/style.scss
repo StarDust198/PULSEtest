@@ -6,7 +6,35 @@
     max-width: 950px;
     margin: 0 auto;
 }
+@import 'blocks/buttons';
+@import 'blocks/titles';
 @import 'blocks/promo';
 @import 'blocks/header';
-@import 'blocks/buttons';
 @import 'blocks/advantages';
+@import 'blocks/consultation';
+@import 'blocks/forms';
+@import 'blocks/carousel';
+
+@media (max-width: 1199px) {
+    .container {
+        max-width: 850px;
+    }    
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 90%;
+    }    
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 90%;
+    }    
+}
+
+@media (max-width: 575px) {
+    .container {
+        max-width: 95%;
+    }    
+}

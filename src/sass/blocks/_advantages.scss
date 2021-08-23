@@ -2,14 +2,6 @@
     min-height: 450px;
     padding: 70px 0 80px;
     background-color: #f6f6f6;
-    &__header {
-        font-size: 30px;
-        font-weight: bold;
-        line-height: 1;
-        text-align: center;
-        color: #0d0d0d;
-        text-transform: uppercase;
-    }
     &__wrapper {
         margin-top: 65px;
         display: flex;
@@ -45,4 +37,82 @@
             text-transform: uppercase;
         }
     }    
+}
+
+@media (max-width: 991px) {
+    .advantages {
+        &__wrapper {
+            margin-top: 55px;             
+        }
+        &__card {
+            width: 220px;
+            img {
+                height: 70px;
+                width: 70px;
+            }
+        }
+        &__cardtitle {
+            margin-top: 38px;
+            font-size: 17px;
+            font-weight: bold;
+        }
+        &__cardtext {
+            margin-top: 25px;
+            font-size: 14px;
+            font-weight: 300;
+        }    
+    }
+}
+
+@media (max-width: 767px) {
+    .advantages {
+        &__wrapper {
+            margin-top: 45px;             
+        }
+        &__card {
+            width: 160px;
+            img {
+                height: 60px;
+                width: 60px;
+            }
+        }
+        &__cardtitle {
+            margin-top: 36px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        &__cardtext {
+            margin-top: 22px;
+            font-size: 12px;
+            font-weight: 300;
+        }    
+    }  
+}
+
+@media (max-width: 575px) {
+    .advantages {
+        &__wrapper {
+            margin-top: 0px;
+            flex-wrap: wrap;          
+        }
+        &__card {
+            margin-top: 45px;
+            width: 100%;
+            padding: 0 20px;
+            img {
+                height: 70px;
+                width: 70px;
+            }
+        }
+        &__cardtitle {
+            margin-top: 38px;
+            font-size: 17px;
+            font-weight: bold;
+        }
+        &__cardtext {
+            margin-top: 15px;
+            font-size: 14px;
+            font-weight: 300;
+        }    
+    }
 }
