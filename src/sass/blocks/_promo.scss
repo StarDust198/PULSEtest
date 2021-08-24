@@ -59,9 +59,14 @@
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
     .promo {
         background-position: 25% center;
+    }
+}
+
+@media (max-width: 991px) {
+    .promo {
         min-height: 600px;
         padding: 23px 0 73px;
         &__wrapper {
@@ -127,7 +132,6 @@
 
 @media (max-width: 575px) {
     .promo {
-        background-position: 25% center;
         min-height: 600px;
         padding: 18px 0 53px;
         &__wrapper {

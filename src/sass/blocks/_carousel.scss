@@ -4,9 +4,13 @@
         position: relative;
         width: 750px;
         margin: 0 auto;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
     }
     
-    .slick-prev, .slick-next {
+    .prev, .next {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -19,8 +23,95 @@
         }
     }
 
-    .slick-next {
+    .next {
         left: auto;
         right: -66px;
+    }
+
+    .tns-horizontal.tns-subpixel .tns-item {
+        vertical-align: middle;
+    }
+
+    .tns-nav {
+        min-width: 200px;
+        margin: 0 auto;
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: space-between;
+        button {
+            width: 40px;
+            height: 20px;
+            border-radius: 50%;    
+            background-color: #fff;
+            border: 2px solid #d0d0d0;
+            box-shadow: 1px 1px 3px #d0d0d0;
+            &.tns-nav-active {
+                background-color: $main-color;
+                box-shadow: 1px 1px 3px $main-color;
+                border: none;
+            }
+        }
+    }
+}
+
+@media(max-width: 1199px) {
+    .carousel {
+        &__inner {
+            img {
+                width: 700px;
+            }
+        }
+        
+        .prev, .next {
+            left: -33px;
+        }
+    
+        .next {
+            left: auto;
+            right: -33px;
+        }
+    }
+}
+
+@media(max-width: 991px) {
+    .carousel {
+        &__inner {
+            img {
+                width: 550px;
+            }
+        }
+
+        .prev, .next {
+            left: 0;
+        }
+    
+        .next {
+            left: auto;
+            right: 0;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .carousel {
+        &__inner {
+            img {
+                width: 420px;
+            }
+        }
+    }
+}
+
+@media(max-width: 575px) {
+    .carousel {
+        padding-bottom: 121px;
+        &__inner {
+            img {
+                width: 300px;
+            }
+        }
     }
 }

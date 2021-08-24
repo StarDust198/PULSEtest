@@ -23,6 +23,12 @@
         height: 55px;
         font-size: 16px;
     }
+    &_mini {
+        margin-top: 0;
+        width: 131px;
+        height: 40px;
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 575px) {
