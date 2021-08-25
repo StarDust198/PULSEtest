@@ -16,5 +16,29 @@
         &:last-of-type {
             margin-bottom: 20px;
         }
+        &_mt25 {
+            margin-top: 25px;
+        }
+    }
+    .error {        
+        border: 2px solid red;
+    }
+    label.error {
+        border: none;
+        text-align: center;
+        margin-bottom: 12px;
+        margin-top: -5px;
+    }
+}
+
+@media (max-width: 575px) {
+    .feed-form {
+        &_mt25 {
+            width: 270px;
+            input {
+                padding: 0 15px;
+                font-size: 13px;
+            }
+        }
     }
 }
