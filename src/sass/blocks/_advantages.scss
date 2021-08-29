@@ -14,9 +14,15 @@
             height: 70px;
             width: 70px;
             margin: 0 auto;
-            &:not(:hover) {
+            // animation-play-state: paused;
+/* /*             animation-delay: 3600s;
+            &:hover {
+                animation-delay: 0s;
+                animation-play-state: running;
+            } */
+/*             &:not(:hover) {
                 animation-play-state: paused;
-            }
+            } */
         }
     }
     &__cardtitle {

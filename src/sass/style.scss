@@ -1,5 +1,8 @@
 @import 'base/variables';
-// @import 'base/animations';
+@import 'libs/bootstrap-reboot';
+@import 'libs/font';
+@import 'libs/animate';
+@import 'libs/tiny-slider';
 * {
     font-family: 'Museo Sans', sans-serif;
 }

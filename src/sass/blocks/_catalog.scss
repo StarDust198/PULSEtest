@@ -126,6 +126,9 @@
                 transform: translateX(0%);
                 margin-right: 20px;
             }
+            &:not(.catalog-item__content_active){
+                padding-right: 20px;
+            }
         }
         &__list {
             width: 50%;
@@ -316,7 +319,6 @@
                 font-size: 15px;
             }
             &__descr {
-                max-width: 200px;
                 font-size: 13px;
                 font-weight: 300;
                 margin-top: 15px;

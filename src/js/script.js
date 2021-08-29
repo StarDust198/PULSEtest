@@ -154,5 +154,14 @@ $(document).ready(function(){
         return false;
     });
 
+    animateArr = ['flip', 'heartBeat', 'wobble'];
+
+    for (let i = 1; i <= 3; i++) {
+        const advImg = document.querySelector(`#advimg${i}`);
+        advImg.addEventListener('mouseover', function() {
+            advImg.classList.add('animate__animated', `animate__${animateArr[i-1]}`);
+        });
+    };
+
     new WOW().init();
 });

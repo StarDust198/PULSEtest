@@ -2,7 +2,12 @@
     height: 630px;
     position: relative;
     &__map {
-        height: 100%;
+        &_wide {
+            height: 100%;
+        }
+        &_thin {
+            display: none;
+        }
     }
     &__info {
         position: absolute;
@@ -63,15 +68,17 @@
 @media (max-width: 575px) {
     .footer {
         height: 800px;
-        display: flex;
-        flex-direction: column;
         &__map {
-            order: 2;
-            position: relative;
+            &_wide {
+                display: none;
+            }
+            &_thin {
+                display: block;
+                height: 520px;
+            }
         }
         &__info {
             position: relative;
-            order: 1;
             padding: 50px 30px 50px;
             width: 100%;
             height: 280px;
